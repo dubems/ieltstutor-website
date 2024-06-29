@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>IELTS Tutor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="font-family: Avenir">
+<div>
+    <nav
+            x-data="{ isOpen: false }"
+            class="relative items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 md:flex md:space-x-6"
+    >
+        <div class="flex justify-between">
+            <a href="#">
+                <!--                <img-->
+                <!--                        src="https://www.floatui.com/logo.svg"-->
+                <!--                        width="120"-->
+                <!--                        height="50"-->
+                <!--                        alt="Float UI logo"-->
+                <!--                />-->
+
+                <h4 class="font-bold text-2xl text-indigo-500">IELTS Tutor</h4>
+            </a>
+            <button
+                    class="text-gray-500 outline-none md:hidden"
+                    @click="isOpen = !isOpen"
+            >
+                <template x-if="isOpen">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </template>
+                <template x-if="!isOpen">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </template>
+            </button>
+        </div>
+
+    </nav>
+    <section class="py-16">
+        <div
+                class="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex"
+        >
+            <div class="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+                <h1 class="text-2xl text-gray-800 font-bold md:text-4xl">
+                    Achieve your dream IELTS score with our AI-powered personalized tutoring
+                </h1>
+                <p>
+                    Our platform uses <span class="font-bold text-black">cutting-edge AI</span> to create a unique study
+                    plan for you, ensuring you cover all the necessary skills.
+                    Benefit from interactive lessons, <span class="font-bold text-black"> real-time feedback</span>, and
+                    <span class="font-bold text-black">continuous progress tracking</span> .
+                </p>
+
+                <div class="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+                    <a
+                            href="javascript:void(0)"
+                            class="block py-2 px-4 text-center text-white font-medium bg-indigo-600 duration-150
+                            hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
+                    >
+                        Join the waitlist
+                    </a>
+
+                </div>
+            </div>
+            <div class="flex-none mt-14 md:mt-0 md:max-w-xl">
+                <img
+                        src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="md:rounded-tl-[108px]"
+                        alt=""
+                />
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
